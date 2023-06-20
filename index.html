@@ -29,6 +29,31 @@
       margin-bottom: 20px;
       text-transform: uppercase;
       letter-spacing: 2px;
+      position: relative;
+      display: inline-block;
+    }
+
+    h1 span {
+      display: inline-block;
+      animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+      0% {
+        color: #ff0000;
+      }
+      25% {
+        color: #00ff00;
+      }
+      50% {
+        color: #0000ff;
+      }
+      75% {
+        color: #ffff00;
+      }
+      100% {
+        color: #ff00ff;
+      }
     }
 
     p {
@@ -60,14 +85,14 @@
     .fadeIn {
       animation-name: fadeIn;
     }
-    
+
     /* Additional Styles */
-    
+
     #container {
       position: relative;
       overflow: hidden;
     }
-    
+
     #container:before {
       content: "";
       position: absolute;
@@ -79,11 +104,11 @@
       z-index: -1;
       opacity: 0.6;
     }
-    
+
     h1 {
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
-    
+
     p:last-child {
       margin-bottom: 0;
     }
@@ -92,21 +117,13 @@
 
 <body>
   <div id="container" class="animated fadeIn">
-    <h1>Shiva</h1>
+    <h1>
+      <span>S</span>
+      <span>h</span>
+      <span>i</span>
+      <span>v</span>
+      <span>a</span>
+    </h1>
     <p>A spiritual seeker on a journey to find <span class="highlight">Krishna</span>.</p>
     <p>Engaged in karma for self-satisfaction and spiritual growth.</p>
-    <p>Seeking inner peace and enlightenment.</p>
-    <p>Join me as I explore the depths of spirituality and discover the divine.</p>
-    <p>DM ME ...IF YOU KNOW EXACT MOTIVE OF YOUR LIFE ..👍🏾</p>
-    <p>aim is to achieve something which will give me satisfaction  ..👍🏾</p>
-    <p>open to learn from other people’s experiences ..👍🏾</p>
-    <p>Inspiration: Bhagavad Gita</p>
-    <p>Jai Shivrai🙏🏾</p>
-  </div>
-
-  <script>
-    // JavaScript code can be added here if needed
-  </script>
-</body>
-
-</html>
+    <p>Seeking inner
